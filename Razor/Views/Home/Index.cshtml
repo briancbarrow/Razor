@@ -1,8 +1,10 @@
 ﻿@model Razor.Models.Product
 
 @{
-    Layout = null;
+    ViewBag.Title = "Product Name";
 }
+
+Product Name: @Model.Name
 
 <!DOCTYPE html>
 
@@ -13,6 +15,7 @@
 </head>
 <body>
     <div> 
+        @Model.Name
     </div>
 </body>
 </html>
